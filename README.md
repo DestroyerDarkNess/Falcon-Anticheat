@@ -1,5 +1,7 @@
 # Falcon Anticheat
 
+![Preview](https://i.ibb.co/q52bJbN/Notify.png)
+
 ## Introduction
 A Complete Anticheat Written in .Net
 
