@@ -1,0 +1,10 @@
+C:\Users\S4Lsalsoft\Documents\Visual Studio 2012\Projects\ShareNet\ShareNet\bin\x86\Debug\ShareNet.dll
+C:\Users\S4Lsalsoft\Documents\Visual Studio 2012\Projects\ShareNet\ShareNet\bin\x86\Debug\ShareNet.pdb
+C:\Users\S4Lsalsoft\Documents\Visual Studio 2012\Projects\ShareNet\ShareNet\bin\x86\Debug\ShareNet.xml
+C:\Users\S4Lsalsoft\Documents\Visual Studio 2012\Projects\ShareNet\ShareNet\bin\x86\Debug\Mono.Cecil.dll
+C:\Users\S4Lsalsoft\Documents\Visual Studio 2012\Projects\ShareNet\ShareNet\obj\x86\Debug\ShareNet.Resources.resources
+C:\Users\S4Lsalsoft\Documents\Visual Studio 2012\Projects\ShareNet\ShareNet\obj\x86\Debug\ShareNet.Notify.resources
+C:\Users\S4Lsalsoft\Documents\Visual Studio 2012\Projects\ShareNet\ShareNet\obj\x86\Debug\ShareNet.vbproj.GenerateResource.Cache
+C:\Users\S4Lsalsoft\Documents\Visual Studio 2012\Projects\ShareNet\ShareNet\obj\x86\Debug\ShareNet.dll
+C:\Users\S4Lsalsoft\Documents\Visual Studio 2012\Projects\ShareNet\ShareNet\obj\x86\Debug\ShareNet.xml
+C:\Users\S4Lsalsoft\Documents\Visual Studio 2012\Projects\ShareNet\ShareNet\obj\x86\Debug\ShareNet.pdb

@@ -1,0 +1,9 @@
+c:\users\s4lsalsoft\documents\visual studio 2012\Projects\ShareNet\ShareNet\bin\Debug\ShareNet.dll
+c:\users\s4lsalsoft\documents\visual studio 2012\Projects\ShareNet\ShareNet\bin\Debug\ShareNet.pdb
+c:\users\s4lsalsoft\documents\visual studio 2012\Projects\ShareNet\ShareNet\bin\Debug\ShareNet.xml
+c:\users\s4lsalsoft\documents\visual studio 2012\Projects\ShareNet\ShareNet\obj\Debug\ShareNet.Resources.resources
+c:\users\s4lsalsoft\documents\visual studio 2012\Projects\ShareNet\ShareNet\obj\Debug\ShareNet.vbproj.GenerateResource.Cache
+c:\users\s4lsalsoft\documents\visual studio 2012\Projects\ShareNet\ShareNet\obj\Debug\ShareNet.dll
+c:\users\s4lsalsoft\documents\visual studio 2012\Projects\ShareNet\ShareNet\obj\Debug\ShareNet.xml
+c:\users\s4lsalsoft\documents\visual studio 2012\Projects\ShareNet\ShareNet\obj\Debug\ShareNet.pdb
+c:\users\s4lsalsoft\documents\visual studio 2012\Projects\ShareNet\ShareNet\obj\Debug\ShareNet.Notify.resources

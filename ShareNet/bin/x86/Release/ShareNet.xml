@@ -1,0 +1,490 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+ShareNet
+</name>
+</assembly>
+<members>
+<member name="M:ShareNet.Core.Hack_Scanner.setRunning(System.Boolean)">
+	<summary>
+ Sets the running state to value and starts the threadloop.
+ </summary>
+	<param name="value">Running state.</param>
+	<remarks></remarks>
+</member><member name="M:ShareNet.Core.Hack_Scanner.setMode(ShareNet.Core.Hack_Scanner.Mode)">
+	<summary>
+ Sets the mode for what so search for.
+ </summary>
+	<param name="mode">Mode.</param>
+	<remarks></remarks>
+</member><member name="M:ShareNet.Core.Hack_Scanner.setInterval(System.Int32)">
+	<summary>
+ Sets the delay for the threadloop.
+ </summary>
+	<param name="value">Delay.</param>
+	<remarks></remarks>
+</member><member name="M:ShareNet.Core.Hack_Scanner.setAction(ShareNet.Core.Hack_Scanner.Action)">
+	<summary>
+ Sets the action for what to do when the program found nonwanted modules.
+ </summary>
+	<param name="action">Action.</param>
+	<remarks></remarks>
+</member><member name="M:ShareNet.Core.Hack_Scanner.setWhitelist(System.Collections.Generic.List{System.String})">
+	<summary>
+ Sets the whitelist of MD5 hashes to be exceptioned.
+ </summary>
+	<param name="pModules">Hash list.</param>
+	<remarks></remarks>
+</member><member name="M:ShareNet.Core.Hack_Scanner.addToWhitelist(System.String)">
+	<summary>
+ Adds the MD5 hash to the whitelist.
+ </summary>
+	<param name="pModule">Hash.</param>
+	<remarks></remarks>
+</member><member name="M:ShareNet.Core.Hack_Scanner.addToWhitelist(System.Collections.Generic.List{System.String})">
+	<summary>
+ Adds the MD5 hashes to the whitelist.
+ </summary>
+	<param name="pModules">Hash list.</param>
+	<remarks></remarks>
+</member><member name="M:ShareNet.Core.Hack_Scanner.setBlacklist(System.Collections.Generic.List{System.String})">
+	<summary>
+ Sets the list of MD5 hashed to the blacklist.
+ </summary>
+	<param name="hashes">Hash list.</param>
+	<remarks></remarks>
+</member><member name="M:ShareNet.Core.Hack_Scanner.addToBlacklist(System.String)">
+	<summary>
+ Adds a hash to the MD5 hash blacklist.
+ </summary>
+	<param name="hash">Hash.</param>
+	<remarks></remarks>
+</member><member name="M:ShareNet.Core.Hack_Scanner.addToBlacklist(System.Collections.Generic.List{System.String})">
+	<summary>
+ Adds a hash list to the blacklist.
+ </summary>
+	<param name="hashes">Hash list.</param>
+	<remarks></remarks>
+</member><member name="F:ShareNet.TimeMeasurer.TimeElapsed">
+	<summary>
+		<see cref="T:System.Diagnostics.Stopwatch"/> instance to retrieve the elapsed time.
+ </summary>
+</member><member name="F:ShareNet.TimeMeasurer.TimeRemaining">
+	<summary>
+		<see cref="T:System.TimeSpan"/> instance to retrieve the remaining time.
+ </summary>
+</member><member name="F:ShareNet.TimeMeasurer.MeasureTimer">
+	<summary>
+		<see cref="T:System.Windows.Forms.Timer"/> instance that updates the elapsed and remaining times and raises the events.
+ </summary>
+</member><member name="F:ShareNet.TimeMeasurer.IsFinished">
+	<summary>
+ Indicates wheter the <see cref="T:ShareNet.TimeMeasurer"/> instance has finished to measure intervals.
+ </summary>
+</member><member name="P:ShareNet.TimeMeasurer.State">
+	<summary>
+ Gets the current state of this <see cref="T:ShareNet.TimeMeasurer"/> instance.
+ </summary>
+	<value>The update interval.</value>
+</member><member name="P:ShareNet.TimeMeasurer.UpdateInterval">
+	<summary>
+ Gets or sets the update interval.
+ </summary>
+	<value>The update interval.</value>
+</member><member name="F:ShareNet.TimeMeasurer._UpdateInterval">
+	<summary>
+ The update interval
+ </summary>
+</member><member name="F:ShareNet.TimeMeasurer.TimeMeasurerState.Running">
+	<summary>
+ The <see cref="T:ShareNet.TimeMeasurer"/> instance is running and measuring time intervals.
+ </summary>
+</member><member name="F:ShareNet.TimeMeasurer.TimeMeasurerState.Stopped">
+	<summary>
+ The <see cref="T:ShareNet.TimeMeasurer"/> instance is temporally stopped, waiting to resume.
+ </summary>
+</member><member name="F:ShareNet.TimeMeasurer.TimeMeasurerState.Finished">
+	<summary>
+ The <see cref="T:ShareNet.TimeMeasurer"/> instance has finished to measure the time intervals.
+ </summary>
+</member><member name="T:ShareNet.TimeMeasurer.TimeMeasurerState">
+	<summary>
+ Specifies the current state of a <see cref="T:ShareNet.TimeMeasurer"/> instance.
+ </summary>
+</member><member name="E:ShareNet.TimeMeasurer.ElapsedTimeUpdated">
+	<summary>
+ Occurs when the elapsed time updates.
+ </summary>
+</member><member name="E:ShareNet.TimeMeasurer.RemainingTimeUpdated">
+	<summary>
+ Occurs when the remaining time updates.
+ </summary>
+</member><member name="E:ShareNet.TimeMeasurer.ElapsedTimeFinished">
+	<summary>
+ Occurs when the elapsed time finishes.
+ </summary>
+</member><member name="E:ShareNet.TimeMeasurer.RemainingTimeFinished">
+	<summary>
+ Occurs when the elapsed time finishes.
+ </summary>
+</member><member name="P:ShareNet.TimeMeasurer.TimeMeasureEventArgs.Hour">
+	<summary>
+ Gets or sets the hour.
+ </summary>
+	<value>The hour.</value>
+</member><member name="P:ShareNet.TimeMeasurer.TimeMeasureEventArgs.Minute">
+	<summary>
+ Gets or sets the minute.
+ </summary>
+	<value>The minute.</value>
+</member><member name="P:ShareNet.TimeMeasurer.TimeMeasureEventArgs.Second">
+	<summary>
+ Gets or sets the Second.
+ </summary>
+	<value>The Second.</value>
+</member><member name="P:ShareNet.TimeMeasurer.TimeMeasureEventArgs.Millisecond">
+	<summary>
+ Gets or sets the Millisecond.
+ </summary>
+	<value>The Millisecond.</value>
+</member><member name="T:ShareNet.TimeMeasurer.TimeMeasureEventArgs">
+	<summary>
+ Contains the <see cref="T:ShareNet.TimeMeasurer.TimeMeasureEventArgs"/> arguments.
+ </summary>
+</member><member name="M:ShareNet.TimeMeasurer.Start(System.Double)">
+	<summary>
+ Starts the time interval measurement from zero.
+ </summary>
+	<param name="Milliseconds">Indicates the time interval to measure, in milliseconds.</param>
+</member><member name="M:ShareNet.TimeMeasurer.Stop">
+	<summary>
+ Stops the time interval measurement.
+ </summary>
+</member><member name="M:ShareNet.TimeMeasurer.Resume">
+	<summary>
+ Resumes the time interval measurement.
+ </summary>
+</member><member name="M:ShareNet.TimeMeasurer.Reset">
+	<summary>
+ Stops Time intervals and resets the elapsed and remaining time to zero.
+ </summary>
+</member><member name="M:ShareNet.TimeMeasurer.MeasureTimer_Tick(System.Object,System.EventArgs)">
+	<summary>
+ Handles the Tick event of the MeasureTimer control.
+ </summary>
+	<param name="sender">The source of the event.</param>
+	<param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
+</member><member name="T:ShareNet.TimeMeasurer">
+	<summary>
+ Measure a time interval.
+ This can be used as a chronometer or countdown timer.
+ </summary>
+</member><member name="M:ShareNet.FileDirSearcher.GetFiles(System.String,System.IO.SearchOption,System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Boolean,System.Boolean)">
+	<summary>
+ Gets the files those matches the criteria inside the specified directory and/or sub-directories.
+ </summary>
+	<param name="dirPath">The root directory path to search for files.</param>
+	<param name="searchOption">The searching mode.</param>
+	<param name="fileNamePatterns">The file name pattern(s) to match.</param>
+	<param name="fileExtPatterns">The file extension pattern(s) to match.</param>
+	<param name="ignoreCase">If <c>True</c>, ignores the comparing case of <paramref name="fileNamePatterns"/> and <paramref name="fileExtPatterns"/> patterns.</param>
+	<param name="throwOnError">Determines whether exceptions will be thrown, like access denied to file or directory.</param>
+	<returns>An <see cref="T:System.Collections.Generic.IEnumerable`1"/> instance containing the files information.</returns>
+	<exception cref="T:System.ArgumentException">dirPath or searchOption</exception>
+</member><member name="M:ShareNet.FileDirSearcher.GetFilePaths(System.String,System.IO.SearchOption,System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Boolean,System.Boolean)">
+	<summary>
+ Gets the filepaths those matches the criteria inside the specified directory and/or sub-directories.
+ </summary>
+	<param name="dirPath">The root directory path to search for files.</param>
+	<param name="searchOption">The searching mode.</param>
+	<param name="fileNamePatterns">The file name pattern(s) to match.</param>
+	<param name="fileExtPatterns">The file extension pattern(s) to match.</param>
+	<param name="ignoreCase">If <c>True</c>, ignores the comparing case of <paramref name="fileNamePatterns"/> and <paramref name="fileExtPatterns"/> patterns.</param>
+	<param name="throwOnError">Determines whether exceptions will be thrown, like access denied to file or directory.</param>
+	<returns>An <see cref="T:System.Collections.Generic.IEnumerable`1"/> instance containing the filepaths.</returns>
+	<exception cref="T:System.ArgumentException">dirPath or searchOption</exception>
+</member><member name="M:ShareNet.FileDirSearcher.GetDirs(System.String,System.IO.SearchOption,System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Boolean,System.Boolean)">
+	<summary>
+ Gets the directories those matches the criteria inside the specified directory and/or sub-directories.
+ </summary>
+	<param name="dirPath">The root directory path to search for directories.</param>
+	<param name="searchOption">The searching mode.</param>
+	<param name="dirPathPatterns">The directory path pattern(s) to match.</param>
+	<param name="dirNamePatterns">The directory name pattern(s) to match.</param>
+	<param name="ignoreCase">If <c>True</c>, ignores the comparing case of <paramref name="dirPathPatterns"/> and <paramref name="dirNamePatterns"/> patterns.</param>
+	<param name="throwOnError">Determines whether exceptions will be thrown, like access denied to directory.</param>
+	<returns>An <see cref="T:System.Collections.Generic.IEnumerable`1"/> instance containing the dirrectories information.</returns>
+	<exception cref="T:System.ArgumentException">dirPath or searchOption</exception>
+</member><member name="M:ShareNet.FileDirSearcher.GetDirPaths(System.String,System.IO.SearchOption,System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Boolean,System.Boolean)">
+	<summary>
+ Gets the filepaths those matches the criteria inside the specified directory and/or sub-directories.
+ </summary>
+	<param name="dirPath">The root directory path to search for directories.</param>
+	<param name="searchOption">The searching mode.</param>
+	<param name="dirPathPatterns">The directory path pattern(s) to match.</param>
+	<param name="dirNamePatterns">The directory name pattern(s) to match.</param>
+	<param name="ignoreCase">If <c>True</c>, ignores the comparing case of <paramref name="dirPathPatterns"/> and <paramref name="dirNamePatterns"/> patterns.</param>
+	<param name="throwOnError">Determines whether exceptions will be thrown, like access denied to directory.</param>
+	<returns>An <see cref="T:System.Collections.Generic.IEnumerable`1"/> instance containing the directory paths.</returns>
+	<exception cref="T:System.ArgumentException">dirPath or searchOption</exception>
+</member><member name="M:ShareNet.FileDirSearcher.AnalyzePath(System.String@)">
+	<summary>
+ Analyzes a directory path and perform specific changes on it.
+ </summary>
+	<param name="dirPath">The directory path.</param>
+	<exception cref="T:System.ArgumentNullException">dirPath;Value is null, empty, or white-spaced.</exception>
+</member><member name="M:ShareNet.FileDirSearcher.CollectFiles(System.Collections.Concurrent.ConcurrentQueue{System.IO.FileInfo},System.String,System.IO.SearchOption,System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Boolean,System.Boolean)">
+	<summary>
+ Collects the files those matches the criteria inside the specified directory and/or sub-directories.
+ </summary>
+	<param name="queue">The <see cref="T:System.Collections.Concurrent.ConcurrentQueue`1"/> instance to enqueue new files.</param>
+	<param name="dirPath">The root directory path to search for files.</param>
+	<param name="searchOption">The searching mode.</param>
+	<param name="fileNamePatterns">The file name pattern(s) to match.</param>
+	<param name="fileExtPatterns">The file extension pattern(s) to match.</param>
+	<param name="ignoreCase">If <c>True</c>, ignores the comparing case of <paramref name="fileNamePatterns"/> and <paramref name="fileExtPatterns"/> patterns.</param>
+	<param name="throwOnError">Determines whether exceptions will be thrown, like access denied to file or directory.</param>
+</member><member name="M:ShareNet.FileDirSearcher.CollectFilePaths(System.Collections.Concurrent.ConcurrentQueue{System.String},System.String,System.IO.SearchOption,System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Boolean,System.Boolean)">
+	<summary>
+ Collects the filepaths those matches the criteria inside the specified directory and/or sub-directories.
+ </summary>
+	<param name="queue">The <see cref="T:System.Collections.Concurrent.ConcurrentQueue`1"/> instance to enqueue new filepaths.</param>
+	<param name="dirPath">The root directory path to search for files.</param>
+	<param name="searchOption">The searching mode.</param>
+	<param name="fileNamePatterns">The file name pattern(s) to match.</param>
+	<param name="fileExtPatterns">The file extension pattern(s) to match.</param>
+	<param name="ignoreCase">If <c>True</c>, ignores the comparing case of <paramref name="fileNamePatterns"/> and <paramref name="fileExtPatterns"/> patterns.</param>
+	<param name="throwOnError">Determines whether exceptions will be thrown, like access denied to file or directory.</param>
+</member><member name="M:ShareNet.FileDirSearcher.CollectDirs(System.Collections.Concurrent.ConcurrentQueue{System.IO.DirectoryInfo},System.String,System.IO.SearchOption,System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Boolean,System.Boolean)">
+	<summary>
+ Collects the directories those matches the criteria inside the specified directory and/or sub-directories.
+ </summary>
+	<param name="queue">The <see cref="T:System.Collections.Concurrent.ConcurrentQueue`1"/> instance to enqueue new directories.</param>
+	<param name="dirPath">The root directory path to search for directories.</param>
+	<param name="searchOption">The searching mode.</param>
+	<param name="dirPathPatterns">The directory path pattern(s) to match.</param>
+	<param name="dirNamePatterns">The directory name pattern(s) to match.</param>
+	<param name="ignoreCase">If <c>True</c>, ignores the comparing case of <paramref name="dirPathPatterns"/> and <paramref name="dirNamePatterns"/> patterns.</param>
+	<param name="throwOnError">Determines whether exceptions will be thrown, like access denied to directory.</param>
+</member><member name="M:ShareNet.FileDirSearcher.CollectDirPaths(System.Collections.Concurrent.ConcurrentQueue{System.String},System.String,System.IO.SearchOption,System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Boolean,System.Boolean)">
+	<summary>
+ Collects the directory paths those matches the criteria inside the specified directory and/or sub-directories.
+ </summary>
+	<param name="queue">The <see cref="T:System.Collections.Concurrent.ConcurrentQueue`1"/> instance to enqueue new directory paths.</param>
+	<param name="dirPath">The root directory path to search for directories.</param>
+	<param name="searchOption">The searching mode.</param>
+	<param name="dirPathPatterns">The directory path pattern(s) to match.</param>
+	<param name="dirNamePatterns">The directory name pattern(s) to match.</param>
+	<param name="ignoreCase">If <c>True</c>, ignores the comparing case of <paramref name="dirPathPatterns"/> and <paramref name="dirNamePatterns"/> patterns.</param>
+	<param name="throwOnError">Determines whether exceptions will be thrown, like access denied to directory.</param>
+</member><member name="T:ShareNet.FileDirSearcher">
+	<summary>
+ Searchs for files and directories.
+ </summary>
+</member><member name="M:ShareNet.SetWindowState.NativeMethods.FindWindow(System.String,System.String)">
+	<summary>
+ Retrieves a handle to the top-level window whose class name and window name match the specified strings.
+ This function does not search child windows.
+ This function does not perform a case-sensitive search.
+ To search child windows, beginning with a specified child window, use the FindWindowEx function.
+ MSDN Documentation: http://msdn.microsoft.com/en-us/library/windows/desktop/ms633499%28v=vs.85%29.aspx
+ </summary>
+	<param name="lpClassName">The class name.
+ If this parameter is NULL, it finds any window whose title matches the lpWindowName parameter.</param>
+	<param name="lpWindowName">The window name (the window's title).
+ If this parameter is NULL, all window names match.</param>
+	<returns>If the function succeeds, the return value is a handle to the window that has the specified class name and window name.
+ If the function fails, the return value is NULL.</returns>
+</member><member name="M:ShareNet.SetWindowState.NativeMethods.FindWindowEx(System.IntPtr,System.IntPtr,System.String,System.String)">
+	<summary>
+ Retrieves a handle to a window whose class name and window name match the specified strings. 
+ The function searches child windows, beginning with the one following the specified child window. 
+ This function does not perform a case-sensitive search.
+ MSDN Documentation: http://msdn.microsoft.com/en-us/library/windows/desktop/ms633500%28v=vs.85%29.aspx
+ </summary>
+	<param name="hwndParent">
+ A handle to the parent window whose child windows are to be searched.
+ If hwndParent is NULL, the function uses the desktop window as the parent window. 
+ The function searches among windows that are child windows of the desktop. 
+ </param>
+	<param name="hwndChildAfter">
+ A handle to a child window. 
+ The search begins with the next child window in the Z order. 
+ The child window must be a direct child window of hwndParent, not just a descendant window.
+ If hwndChildAfter is NULL, the search begins with the first child window of hwndParent.
+ </param>
+	<param name="strClassName">
+ The window class name.
+ </param>
+	<param name="strWindowName">
+ The window name (the window's title). 
+ If this parameter is NULL, all window names match.
+ </param>
+	<returns>
+ If the function succeeds, the return value is a handle to the window that has the specified class and window names.
+ If the function fails, the return value is NULL.
+ </returns>
+</member><member name="M:ShareNet.SetWindowState.NativeMethods.GetWindowThreadProcessId(System.IntPtr,System.Int32@)">
+	<summary>
+ Retrieves the identifier of the thread that created the specified window 
+ and, optionally, the identifier of the process that created the window.
+ MSDN Documentation: http://msdn.microsoft.com/en-us/library/windows/desktop/ms633522%28v=vs.85%29.aspx
+ </summary>
+	<param name="hWnd">A handle to the window.</param>
+	<param name="ProcessId">
+ A pointer to a variable that receives the process identifier. 
+ If this parameter is not NULL, GetWindowThreadProcessId copies the identifier of the process to the variable; 
+ otherwise, it does not.
+ </param>
+	<returns>The identifier of the thread that created the window.</returns>
+</member><member name="M:ShareNet.SetWindowState.NativeMethods.ShowWindow(System.IntPtr,ShareNet.SetWindowState.WindowState)">
+	<summary>
+ Sets the specified window's show state.
+ MSDN Documentation: http://msdn.microsoft.com/en-us/library/windows/desktop/ms633548%28v=vs.85%29.aspx
+ </summary>
+	<param name="hwnd">A handle to the window.</param>
+	<param name="nCmdShow">Controls how the window is to be shown.</param>
+	<returns><c>true</c> if the function succeeds, <c>false</c> otherwise.</returns>
+</member><member name="T:ShareNet.SetWindowState.NativeMethods">
+	<summary>
+ Platform Invocation methods (P/Invoke), access unmanaged code.
+ This class does not suppress stack walks for unmanaged code permission.
+ <see cref="T:System.Security.SuppressUnmanagedCodeSecurityAttribute"/>  must not be applied to this class.
+ This class is for methods that can be used anywhere because a stack walk will be performed.
+ MSDN Documentation: http://msdn.microsoft.com/en-us/library/ms182161.aspx
+ </summary>
+</member><member name="F:ShareNet.SetWindowState.WindowState.Hide">
+	<summary>
+ Hides the window and activates another window.
+ </summary>
+</member><member name="F:ShareNet.SetWindowState.WindowState.Normal">
+	<summary>
+ Activates and displays a window. 
+ If the window is minimized or maximized, the system restores it to its original size and position.
+ An application should specify this flag when displaying the window for the first time.
+ </summary>
+</member><member name="F:ShareNet.SetWindowState.WindowState.ShowMinimized">
+	<summary>
+ Activates the window and displays it as a minimized window.
+ </summary>
+</member><member name="F:ShareNet.SetWindowState.WindowState.Maximize">
+	<summary>
+ Maximizes the specified window.
+ </summary>
+</member><member name="F:ShareNet.SetWindowState.WindowState.ShowMaximized">
+	<summary>
+ Activates the window and displays it as a maximized window.
+ </summary>
+</member><member name="F:ShareNet.SetWindowState.WindowState.ShowNoActivate">
+	<summary>
+ Displays a window in its most recent size and position. 
+ This value is similar to <see cref="F:ShareNet.SetWindowState.WindowState.Normal"/>, except the window is not actived.
+ </summary>
+</member><member name="F:ShareNet.SetWindowState.WindowState.Show">
+	<summary>
+ Activates the window and displays it in its current size and position.
+ </summary>
+</member><member name="F:ShareNet.SetWindowState.WindowState.Minimize">
+	<summary>
+ Minimizes the specified window and activates the next top-level window in the Z order.
+ </summary>
+</member><member name="F:ShareNet.SetWindowState.WindowState.ShowMinNoActive">
+	<summary>
+ Displays the window as a minimized window. 
+ This value is similar to <see cref="F:ShareNet.SetWindowState.WindowState.ShowMinimized"/>, except the window is not activated.
+ </summary>
+</member><member name="F:ShareNet.SetWindowState.WindowState.ShowNA">
+	<summary>
+ Displays the window in its current size and position.
+ This value is similar to <see cref="F:ShareNet.SetWindowState.WindowState.Show"/>, except the window is not activated.
+ </summary>
+</member><member name="F:ShareNet.SetWindowState.WindowState.Restore">
+	<summary>
+ Activates and displays the window. 
+ If the window is minimized or maximized, the system restores it to its original size and position.
+ An application should specify this flag when restoring a minimized window.
+ </summary>
+</member><member name="F:ShareNet.SetWindowState.WindowState.ShowDefault">
+	<summary>
+ Sets the show state based on the SW_* value specified in the STARTUPINFO structure 
+ passed to the CreateProcess function by the program that started the application.
+ </summary>
+</member><member name="F:ShareNet.SetWindowState.WindowState.ForceMinimize">
+	<summary>
+		<b>Windows 2000/XP:</b> 
+ Minimizes a window, even if the thread that owns the window is not responding. 
+ This flag should only be used when minimizing windows from a different thread.
+ </summary>
+</member><member name="T:ShareNet.SetWindowState.WindowState">
+	<summary>
+ Controls how the window is to be shown.
+ MSDN Documentation: http://msdn.microsoft.com/en-us/library/windows/desktop/ms633548%28v=vs.85%29.aspx
+ </summary>
+</member><member name="M:ShareNet.SetWindowState.SetWindowState(System.IntPtr,ShareNet.SetWindowState.WindowState)">
+	<summary>
+ Set the state of a window by an HWND.
+ </summary>
+	<param name="WindowHandle">A handle to the window.</param>
+	<param name="WindowState">The state of the window.</param>
+	<returns><c>true</c> if the function succeeds, <c>false</c> otherwise.</returns>
+</member><member name="M:ShareNet.SetWindowState.SetWindowState(System.String,ShareNet.SetWindowState.WindowState,System.Boolean)">
+	<summary>
+ Set the state of a window by a process name.
+ </summary>
+	<param name="ProcessName">The name of the process.</param>
+	<param name="WindowState">The state of the window.</param>
+	<param name="Recursivity">If set to <c>false</c>, only the first process instance will be processed.</param>
+</member><member name="T:ShareNet.SetWindowState">
+	<summary>
+ Sets the state of a window.
+ </summary>
+</member><member name="M:ShareNet.Net.BinaryCheck.GetFileVersion(System.String,System.Text.StringBuilder,System.Int32,System.Int32@)">
+	<summary>
+ Gets the common language runtime (CLR) version information of the specified file, using the specified buffer.
+ </summary>
+	<param name="filepath">Indicates the filepath of the file to be examined.</param>
+	<param name="buffer">Indicates the buffer allocated for the version information that is returned.</param>
+	<param name="buflen">Indicates the size, in wide characters, of the buffer.</param>
+	<param name="written">Indicates the size, in bytes, of the returned buffer.</param>
+	<returns>System.Int32.</returns>
+</member><member name="M:ShareNet.Net.BinaryCheck.IsNetAssembly(System.String)">
+	<summary>
+ Determines whether an exe/dll file is an .Net assembly.
+ </summary>
+	<param name="File">Indicates the exe/dll file to check.</param>
+	<returns><c>true</c> if file is an .Net assembly; otherwise, <c>false</c>.</returns>
+</member><member name="F:ShareNet.Net.SuspiciusClases.Database.MaliciousClasesDB">
+ ----------------------------------------------------------------------------------------------------
+ <summary>
+ A sourcecode template of a WindowsForms application written in Visual Basic.Net.
+ </summary>
+ ----------------------------------------------------------------------------------------------------
+
+</member><member name="F:ShareNet.AntiCheat.MainProc.Clock">
+	<summary>
+ The <see cref="T:ShareNet.TimeMeasurer"/> instance that measure time intervals.
+ </summary>
+</member><member name="P:ShareNet.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:ShareNet.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:ShareNet.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="F:ShareNet.Net.SuspiciusImports.Database.MaliciousImportsDB">
+ ----------------------------------------------------------------------------------------------------
+ <summary>
+ A sourcecode template of a WindowsForms application written in Visual Basic.Net.
+ </summary>
+ ----------------------------------------------------------------------------------------------------
+
+</member>
+</members>
+</doc>

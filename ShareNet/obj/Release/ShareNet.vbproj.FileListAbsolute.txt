@@ -1,0 +1,10 @@
+c:\users\s4lsalsoft\documents\visual studio 2012\Projects\ShareNet\ShareNet\bin\Release\ShareNet.dll
+c:\users\s4lsalsoft\documents\visual studio 2012\Projects\ShareNet\ShareNet\bin\Release\ShareNet.pdb
+c:\users\s4lsalsoft\documents\visual studio 2012\Projects\ShareNet\ShareNet\bin\Release\ShareNet.xml
+c:\users\s4lsalsoft\documents\visual studio 2012\Projects\ShareNet\ShareNet\obj\Release\ShareNet.Resources.resources
+c:\users\s4lsalsoft\documents\visual studio 2012\Projects\ShareNet\ShareNet\obj\Release\ShareNet.Notify.resources
+c:\users\s4lsalsoft\documents\visual studio 2012\Projects\ShareNet\ShareNet\obj\Release\ShareNet.vbproj.GenerateResource.Cache
+c:\users\s4lsalsoft\documents\visual studio 2012\Projects\ShareNet\ShareNet\obj\Release\ShareNet.dll
+c:\users\s4lsalsoft\documents\visual studio 2012\Projects\ShareNet\ShareNet\obj\Release\ShareNet.xml
+c:\users\s4lsalsoft\documents\visual studio 2012\Projects\ShareNet\ShareNet\obj\Release\ShareNet.pdb
+C:\Users\S4Lsalsoft\Documents\Visual Studio 2012\Projects\ShareNet\ShareNet\obj\Release\ShareNet.vbprojResolveAssemblyReference.cache

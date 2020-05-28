@@ -1,0 +1,11 @@
+C:\Users\S4Lsalsoft\Documents\Visual Studio 2012\Projects\ShareNet\ShareNet\obj\x86\Release\ShareNet.vbprojResolveAssemblyReference.cache
+C:\Users\S4Lsalsoft\Documents\Visual Studio 2012\Projects\ShareNet\ShareNet\obj\x86\Release\ShareNet.Resources.resources
+C:\Users\S4Lsalsoft\Documents\Visual Studio 2012\Projects\ShareNet\ShareNet\obj\x86\Release\ShareNet.Notify.resources
+C:\Users\S4Lsalsoft\Documents\Visual Studio 2012\Projects\ShareNet\ShareNet\obj\x86\Release\ShareNet.vbproj.GenerateResource.Cache
+C:\Users\S4Lsalsoft\Documents\Visual Studio 2012\Projects\ShareNet\ShareNet\bin\x86\Release\ShareNet.dll
+C:\Users\S4Lsalsoft\Documents\Visual Studio 2012\Projects\ShareNet\ShareNet\bin\x86\Release\ShareNet.pdb
+C:\Users\S4Lsalsoft\Documents\Visual Studio 2012\Projects\ShareNet\ShareNet\bin\x86\Release\ShareNet.xml
+C:\Users\S4Lsalsoft\Documents\Visual Studio 2012\Projects\ShareNet\ShareNet\bin\x86\Release\Mono.Cecil.dll
+C:\Users\S4Lsalsoft\Documents\Visual Studio 2012\Projects\ShareNet\ShareNet\obj\x86\Release\ShareNet.dll
+C:\Users\S4Lsalsoft\Documents\Visual Studio 2012\Projects\ShareNet\ShareNet\obj\x86\Release\ShareNet.xml
+C:\Users\S4Lsalsoft\Documents\Visual Studio 2012\Projects\ShareNet\ShareNet\obj\x86\Release\ShareNet.pdb
