@@ -10,7 +10,8 @@ A Complete Anticheat Written in .Net
 - Anti-Analysis
 - Additional features
 - Detection of Malicious Programs
-- Real-time Process Scanner [MD5 scanner | PE Scanner | Binary Scan for Programs Made in .NET (Detect all kinds of hacks done in .NET)]
+- Real-time Process Scanner 
+    [MD5 scanner | PE Scanner | Binary Scan for Programs Made in .NET (Detect all kinds of hacks done in .NET)]
 - Host Scan (Verify that your domain or connections are not blocked on the Windows host)
 - Real-time Module Scan.
 
