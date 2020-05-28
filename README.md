@@ -3,7 +3,8 @@
 ![Preview](https://i.ibb.co/q52bJbN/Notify.png)
 
 ## Introduction
-A Complete Anticheat Written in .Net
+- A Complete Anticheat Written in .Net
+- It has many features, It uses All the add-ons of my [Destroyer Protection](https://github.com/DestroyerDarkNess/DestroyerProtection) and it also has Minimal Parts of the Scan Engine of my [Anti-Malware Portable Strely Cleaner](https://toolslib.net/downloads/viewdownload/548-strely/).
 
 ## Features
 - Anti-debugging attacks
@@ -18,7 +19,7 @@ A Complete Anticheat Written in .Net
 - Real-time Module Scan.
 
 ## Notes
-**The Unmanaged Exports Library is used in the Falcon Wrapper.vb class for use in C ++ and Delphi.**
+**The [Unmanaged Exports Library](https://www.nuget.org/packages/UnmanagedExports) is used in the FalconWrapper.vb class for use in C ++ and Delphi.**
   
 ## Preview and Testing
   - Download BasicPacMan Game with Falcon Anticheat : [Preview Game/Anticheat](https://github.com/DestroyerDarkNess/Falcon-Anticheat/raw/master/Preview%20Game%26Anticheat.rar)
