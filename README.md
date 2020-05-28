@@ -19,7 +19,7 @@ A Complete Anticheat Written in .Net
 **The Unmanaged Exports Library is used in the Falcon Wrapper.vb class for use in C ++ and Delphi.**
   
 ## Preview and Testing
-  - BasicPacMan Game with Falcon Anticheat : [Preview Game/Anticheat](https://github.com/DestroyerDarkNess/Falcon-Anticheat/raw/master/Preview%20Game%26Anticheat.rar)
+  - Download BasicPacMan Game with Falcon Anticheat : [Preview Game/Anticheat](https://github.com/DestroyerDarkNess/Falcon-Anticheat/raw/master/Preview%20Game%26Anticheat.rar)
   
   ![Preview](https://i.ibb.co/8D6hvpR/f2.png)
   
