@@ -102,6 +102,9 @@
     <Compile Include="Core\AntiAnalysis\MainAnalysis.vb" />
     <Compile Include="Core\AntiDebug\MainDebug.vb" />
     <Compile Include="Core\AntiDump\MainDump.vb" />
+    <Compile Include="Core\ExternalInspect\ExDictionary.vb" />
+    <Compile Include="Core\ExternalInspect\NativeMethods.vb" />
+    <Compile Include="Core\ExternalInspect\WControlHooking.vb" />
     <Compile Include="Core\Hack_Scanner.vb" />
     <Compile Include="Core\AntiInjection\MainInject.vb" />
     <Compile Include="Core\AntiVirtualMachine\MainVM.vb" />

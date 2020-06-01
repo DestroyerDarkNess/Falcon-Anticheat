@@ -66,6 +66,10 @@ ShareNet
  </summary>
 	<param name="hashes">Hash list.</param>
 	<remarks></remarks>
+</member><member name="M:ShareNet.NativeMethods.#ctor">
+	<summary>
+ Prevents a default instance of the <see cref="T:ShareNet.NativeMethods"/> class from being created.
+ </summary>
 </member><member name="F:ShareNet.TimeMeasurer.TimeElapsed">
 	<summary>
 		<see cref="T:System.Diagnostics.Stopwatch"/> instance to retrieve the elapsed time.

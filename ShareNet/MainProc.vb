@@ -97,6 +97,7 @@ Namespace AntiCheat
         Private Utilities As New Tools.Utils
         Private WithEvents CheckS1 As New System.Windows.Forms.Timer With {.Interval = 1}
         Private GamePath As String = Assembly.GetCallingAssembly.Location
+        Private GameProcName As String = System.IO.Path.GetFileNameWithoutExtension(GamePath)
 
 #End Region
 
@@ -120,6 +121,8 @@ Namespace AntiCheat
         End Sub
 
         Public Sub CreateDevice()
+            On Error Resume Next
+            StartExternalScan()
             Destroyer.LogFuncs.WriteLog("Starting Falcon Anticheat Engine ...", Destroyer.LogFuncs.InfoType.None)
             If _Enable_AntiDump = True Then
                 Destroyer.AntiDump.MainDump.AntiDumpEnabled()
@@ -237,6 +240,7 @@ Namespace AntiCheat
             End Sub)
 
         Private Function TextAnalice(ByVal Textstr As String, ByVal IsAlphabetic As Boolean) As Boolean
+
             If IsAlphabetic = True Then
                 If StringIsAlphabetic(Textstr) = False Then
                     _DetectDescription = "Malicious program detected - " & Textstr
@@ -259,6 +263,7 @@ Namespace AntiCheat
         End Function
 
         Private Function ModuleSelf(ByVal ProcName As String)
+            On Error Resume Next
             Destroyer.LogFuncs.WriteLog(" ", Destroyer.LogFuncs.InfoType.None)
             Destroyer.LogFuncs.WriteLog(" ", Destroyer.LogFuncs.InfoType.None)
             Destroyer.LogFuncs.WriteLog("------------------------------ Module Scaning Starting For: " & ProcName, Destroyer.LogFuncs.InfoType.None)
@@ -358,6 +363,7 @@ Namespace AntiCheat
 #Region " Destroyer Protection Check "
 
         Private Sub DestroProtect_Start()
+            On Error Resume Next
             Destroyer.LogFuncs.WriteLog("Starting DestroyerEngine ...", Destroyer.LogFuncs.InfoType.None)
             DestroyerProtect.Start(Destroyer.AntiAnalysis.MainAnalysis.SearchType.FromNameandTitle, _
                              Destroyer.AntiDebug.MainDebug.DebugDetectionTypes.AllScanEgines, _
@@ -368,6 +374,7 @@ Namespace AntiCheat
         End Sub
 
         Private Sub CheckS1_Tick(sender As Object, e As EventArgs) Handles CheckS1.Tick
+            On Error Resume Next
             BPoints.DestroyerEngine = PointsType.Starting
             Dim Finispscan As DestroyerProtect.ResultType = DestroyerProtect.Process_scanner
             Dim FinisDbugscan As DestroyerProtect.ResultType = DestroyerProtect.Debugers_scanner
@@ -548,6 +555,77 @@ Namespace AntiCheat
 
         End Sub
 
+
+#End Region
+
+#Region " eXeternal Scan "
+
+        Private WithEvents WindowTimer As New System.Windows.Forms.Timer With {.Interval = 1}
+
+        Public ExclusionProcess() As String = {GameProcName, "Explorer"}
+
+        Dim WindowsExternalMonitor As New WControlHooking
+
+        Public Sub StartExternalScan()
+            WindowsExternalMonitor.StartMonitor()
+            WindowTimer.Enabled = True
+        End Sub
+
+        Private Sub WindowTimer_Tick(sender As Object, e As EventArgs) Handles WindowTimer.Tick
+            Dim ProcName_Value = WindowsExternalMonitor.ProcName
+            Dim PID_Value = WindowsExternalMonitor.ProcID
+            Dim Label_Hwnd_Value = WindowsExternalMonitor.ProcHwnd
+            Dim Label_Caption_Value = WindowsExternalMonitor.ProcCaption
+            Dim Label_CoordsRelative_Value = WindowsExternalMonitor.CoordsRelative
+            Dim Label_CoordsScreen_Value = WindowsExternalMonitor.CoordsScreen
+
+            If ExclusionClasesEx(ExclusionProcess.Count, ProcName_Value) = False Then
+
+                If Not LCase(WindowsExternalMonitor.ProcCaption) = LCase(Get_Process_Window_Title(WindowsExternalMonitor.ProcName)) Then
+                    For Each Mstr As String In Core.ExDictionary.MaliciousKeyword
+                        If LCase(Label_Caption_Value).Contains(LCase(Mstr)) = True Then
+                            _DetectDescription = "Hack detected [A]" & vbNewLine
+                            _LogResult += Label_Caption_Value & " = " & Mstr & vbNewLine & "ProcName : " & ProcName_Value & vbNewLine
+                            _DetectionState = ResultType.Danger
+                        End If
+                    Next
+                End If
+
+            End If
+
+
+            ' Else
+            '   For Each Mstr As String In Core.ExDictionary.MaliciousKeyword
+            '     If InStr(1, LCase(Label_Caption_Value), LCase(Mstr)) > 0 Then
+            '      _LogResult += "Hack detected [B]" & vbNewLine
+            '      _DetectDescription = Label_Caption_Value & " = " & Mstr & vbNewLine
+            '      _DetectionState = ResultType.Danger
+            '     End If
+            '   Next
+            ' End If
+
+        End Sub
+
+        Private Function ExclusionClasesEx(ByVal CountClass As Integer, ByVal Clase As String) As Boolean
+            If Clase.ToLower.EndsWith(".exe") Then Clase = Clase.Substring(0, Clase.Length - 4)
+            Dim MaxValue As Integer = CountClass
+            Dim DetectionCount As Integer = 0
+            Dim ProcessClass As Integer = 0
+            For Each Processnames As String In ExclusionProcess
+                If Processnames.ToLower.EndsWith(".exe") Then Processnames = Processnames.Substring(0, Processnames.Length - 4)
+
+                If LCase(Processnames) = LCase(Clase) Then
+                    DetectionCount += 1
+                End If
+                ProcessClass += 1
+            Next
+            If MaxValue = ProcessClass Then
+                If DetectionCount > 0 Then
+                    Return True
+                End If
+            End If
+            Return False
+        End Function
 
 #End Region
 

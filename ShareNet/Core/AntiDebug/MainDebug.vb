@@ -122,7 +122,7 @@ Namespace Destroyer.AntiDebug
         'Administrator privileges are required for this Function.
         '////////////////////////////////////////////////////////////////////////
 
-        Private Shared exclusion_processes() As String = {"FAC.exe"}
+        Private Shared exclusion_processes() As String = {"explorer.exe"}
 
         Public Shared Function Parent_Process() As Boolean
             Dim myId = Process.GetCurrentProcess().Id
@@ -137,7 +137,6 @@ Namespace Destroyer.AntiDebug
             For Each ProcNameSegure As String In exclusion_processes
                 If ProcNameSegure.ToLower.EndsWith(".exe") Then ProcNameSegure = ProcNameSegure.Substring(0, ProcNameSegure.Length - 4)
                 If Not LCase(ParentProcessName) = LCase(ProcNameSegure) Then
-                    System.IO.File.WriteAllText("a1.txt", ParentProcessName)
                     _LogResult = "The process : " & ParentProcessName & ".exe" & " I am trying to run / debug the program." & vbNewLine
                     Return True
                 End If
