@@ -17,6 +17,7 @@
     [MD5 scanner | PE Scanner | Assembly Scanner for Programs Made in .NET (Detect all kinds of hacks done in .NET)]
 - Host Scan (Verify that your domain or connections are not blocked on the Windows host)
 - Real-time Module Scan.
+- Control Scanner for External Cheats.
 
 ## Notes
 **The [Unmanaged Exports Library](https://www.nuget.org/packages/UnmanagedExports) is used in the FalconWrapper.vb class for use in C ++ and Delphi.**
