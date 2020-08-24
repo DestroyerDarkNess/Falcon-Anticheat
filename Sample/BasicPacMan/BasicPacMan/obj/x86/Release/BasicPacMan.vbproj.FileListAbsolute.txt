@@ -1,0 +1,15 @@
+C:\Users\S4Lsalsoft\Downloads\basicpacman-master\basicpacman-master\BasicPacMan\BasicPacMan\bin\Release\BasicPacMan.exe.config
+C:\Users\S4Lsalsoft\Downloads\basicpacman-master\basicpacman-master\BasicPacMan\BasicPacMan\bin\Release\BasicPacMan.exe
+C:\Users\S4Lsalsoft\Downloads\basicpacman-master\basicpacman-master\BasicPacMan\BasicPacMan\bin\Release\BasicPacMan.pdb
+C:\Users\S4Lsalsoft\Downloads\basicpacman-master\basicpacman-master\BasicPacMan\BasicPacMan\bin\Release\BasicPacMan.xml
+C:\Users\S4Lsalsoft\Downloads\basicpacman-master\basicpacman-master\BasicPacMan\BasicPacMan\bin\Release\ShareNet.dll
+C:\Users\S4Lsalsoft\Downloads\basicpacman-master\basicpacman-master\BasicPacMan\BasicPacMan\bin\Release\Mono.Cecil.dll
+C:\Users\S4Lsalsoft\Downloads\basicpacman-master\basicpacman-master\BasicPacMan\BasicPacMan\bin\Release\ShareNet.pdb
+C:\Users\S4Lsalsoft\Downloads\basicpacman-master\basicpacman-master\BasicPacMan\BasicPacMan\bin\Release\ShareNet.xml
+C:\Users\S4Lsalsoft\Downloads\basicpacman-master\basicpacman-master\BasicPacMan\BasicPacMan\obj\x86\Release\BasicPacMan.vbprojResolveAssemblyReference.cache
+C:\Users\S4Lsalsoft\Downloads\basicpacman-master\basicpacman-master\BasicPacMan\BasicPacMan\obj\x86\Release\BasicPacMan.patmanMain.resources
+C:\Users\S4Lsalsoft\Downloads\basicpacman-master\basicpacman-master\BasicPacMan\BasicPacMan\obj\x86\Release\BasicPacMan.Resources.resources
+C:\Users\S4Lsalsoft\Downloads\basicpacman-master\basicpacman-master\BasicPacMan\BasicPacMan\obj\x86\Release\BasicPacMan.vbproj.GenerateResource.Cache
+C:\Users\S4Lsalsoft\Downloads\basicpacman-master\basicpacman-master\BasicPacMan\BasicPacMan\obj\x86\Release\BasicPacMan.exe
+C:\Users\S4Lsalsoft\Downloads\basicpacman-master\basicpacman-master\BasicPacMan\BasicPacMan\obj\x86\Release\BasicPacMan.xml
+C:\Users\S4Lsalsoft\Downloads\basicpacman-master\basicpacman-master\BasicPacMan\BasicPacMan\obj\x86\Release\BasicPacMan.pdb

@@ -1,0 +1,15 @@
+C:\Users\S4Lsalsoft\Downloads\basicpacman-master\basicpacman-master\BasicPacMan\BasicPacMan\bin\Debug\BasicPacMan.exe
+C:\Users\S4Lsalsoft\Downloads\basicpacman-master\basicpacman-master\BasicPacMan\BasicPacMan\bin\Debug\BasicPacMan.pdb
+C:\Users\S4Lsalsoft\Downloads\basicpacman-master\basicpacman-master\BasicPacMan\BasicPacMan\bin\Debug\BasicPacMan.xml
+C:\Users\S4Lsalsoft\Downloads\basicpacman-master\basicpacman-master\BasicPacMan\BasicPacMan\obj\x86\Debug\BasicPacMan.patmanMain.resources
+C:\Users\S4Lsalsoft\Downloads\basicpacman-master\basicpacman-master\BasicPacMan\BasicPacMan\obj\x86\Debug\BasicPacMan.Resources.resources
+C:\Users\S4Lsalsoft\Downloads\basicpacman-master\basicpacman-master\BasicPacMan\BasicPacMan\obj\x86\Debug\BasicPacMan.vbproj.GenerateResource.Cache
+C:\Users\S4Lsalsoft\Downloads\basicpacman-master\basicpacman-master\BasicPacMan\BasicPacMan\obj\x86\Debug\BasicPacMan.exe
+C:\Users\S4Lsalsoft\Downloads\basicpacman-master\basicpacman-master\BasicPacMan\BasicPacMan\obj\x86\Debug\BasicPacMan.xml
+C:\Users\S4Lsalsoft\Downloads\basicpacman-master\basicpacman-master\BasicPacMan\BasicPacMan\obj\x86\Debug\BasicPacMan.pdb
+C:\Users\S4Lsalsoft\Downloads\basicpacman-master\basicpacman-master\BasicPacMan\BasicPacMan\obj\x86\Debug\BasicPacMan.vbprojResolveAssemblyReference.cache
+C:\Users\S4Lsalsoft\Downloads\basicpacman-master\basicpacman-master\BasicPacMan\BasicPacMan\bin\Debug\BasicPacMan.exe.config
+C:\Users\S4Lsalsoft\Downloads\basicpacman-master\basicpacman-master\BasicPacMan\BasicPacMan\bin\Debug\ShareNet.dll
+C:\Users\S4Lsalsoft\Downloads\basicpacman-master\basicpacman-master\BasicPacMan\BasicPacMan\bin\Debug\Mono.Cecil.dll
+C:\Users\S4Lsalsoft\Downloads\basicpacman-master\basicpacman-master\BasicPacMan\BasicPacMan\bin\Debug\ShareNet.pdb
+C:\Users\S4Lsalsoft\Downloads\basicpacman-master\basicpacman-master\BasicPacMan\BasicPacMan\bin\Debug\ShareNet.xml

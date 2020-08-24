@@ -1,0 +1,101 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+BasicPacMan
+</name>
+</assembly>
+<members>
+<member name="M:BasicPacMan.PatmanMod.CreateWalls">
+	<summary>
+ CREATE WALLS SUBROUTINE
+ : Don't get too wrapped up around this subroutine.  All it really does is designate each tile that is a wall and gives it a movement cost of 0.
+ This can be accomplished much easier by just loading it from a file, but I was lazy and just decided to do it this way.
+ </summary>
+	<remarks></remarks>
+</member><member name="P:BasicPacMan.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:BasicPacMan.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="P:BasicPacMan.My.Resources.Resources.patman">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:BasicPacMan.My.Resources.Resources.sndChomp">
+	<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member><member name="P:BasicPacMan.My.Resources.Resources.sndGhostDies">
+	<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member><member name="P:BasicPacMan.My.Resources.Resources.sndKillMode">
+	<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member><member name="P:BasicPacMan.My.Resources.Resources.sndPatmanDies">
+	<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member><member name="P:BasicPacMan.My.Resources.Resources.sndSiren">
+	<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member><member name="P:BasicPacMan.My.Resources.Resources.sndTheme">
+	<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member><member name="T:BasicPacMan.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:BasicPacMan.DynamicBitmap.DrawOnSurface(System.Drawing.Bitmap,System.Drawing.Rectangle,System.Drawing.Rectangle,System.Boolean,System.Boolean,System.Drawing.Drawing2D.InterpolationMode)">
+	<summary>
+ Draw onto graphics surface of this class' bitmap
+ </summary>
+	<param name="source"></param>
+	<param name="srcRectangle"></param>
+	<param name="destRectangle"></param>
+	<param name="InterpolMode"></param>
+	<remarks></remarks>
+</member><member name="M:BasicPacMan.DynamicBitmap.LoadBitmap(System.String,System.Int32,System.Int32)">
+	<summary>
+ INITIALIZING CLASS SECTION 
+ : 3 Options to initialize this class - load a bitmap, create a blank bitmap, or create parameters for a grid and subsequent blank bitmap
+ </summary>
+	<param name="fromFileName"></param>
+	<remarks></remarks>
+</member><member name="P:BasicPacMan.DynamicBitmap.TileHeight">
+	<summary>
+ TILE METHODS SECTION
+  : Tiles can be either grid cells or sprite blocks, depending on how the user is using the class
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:BasicPacMan.DynamicBitmap.DrawTileLines">
+	<summary>
+ Functions and Subroutines
+  : Primary workings of the class module
+ </summary>
+	<remarks></remarks>
+</member><member name="P:BasicPacMan.DynamicBitmap.Exists">
+	<summary>
+ Basic Class Properties
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:BasicPacMan.DynamicBitmap.NodeStatus">
+	<summary>
+ PATH FINDING VARIABLES, ALGORITHM, AND FUNCTIONS START HERE
+ </summary>
+	<remarks></remarks>
+</member>
+</members>
+</doc>
